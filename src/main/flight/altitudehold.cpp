@@ -750,6 +750,7 @@ float getTimeConstant ( ) {
 #endif
 
 void setAltitude ( int32_t altitude ) {
+  Monitor_Println("Set Altitude:", altitude);
   AltHold = altitude;
 }
 
@@ -758,11 +759,13 @@ void setRelativeAltitude ( int32_t altitude ) {
 }
 
 int32_t getEstAltitude ( ) {
+  Monitor_Println("Get Est Altitude:", EstAlt);
   return EstAlt;
   // altest=EstAlt;
 }
 
 int32_t getEstVelocity ( ) {
+  Monitor_Println("VelocityZ:", VelocityZ);
   return VelocityZ;
 }
 

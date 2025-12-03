@@ -31,6 +31,7 @@ void onLoopStart ( void ) {
 // The loop function is called in an endless loop
 void plutoLoop ( void ) {
   // Add your repeated code here
+  Monitor_Println("I am looping");
 }
 
 // The function is called once after plutoLoop when you deactivate Developer Mode
